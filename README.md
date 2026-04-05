@@ -38,7 +38,7 @@ src/main/webapp/
 
 - Java JDK 11+
 - Apache Maven 3.6+
-- Apache Tomcat 9.x
+- Apache Tomcat 11.x
 
 ## Compilar y generar el WAR
 
