@@ -10,7 +10,7 @@ Aplicación web dinámica desarrollada con Java EE (JSP, Servlets, JSTL, JDBC) s
 | Controlador | Java Servlets (javax.servlet) |
 | Modelo / DAO | Java + JDBC |
 | Base de datos | H2 (embebida, sin instalación) |
-| Servidor | Apache Tomcat 9 |
+| Servidor | Apache Tomcat 11 |
 | Build | Maven (WAR) |
 
 ## Estructura del proyecto (MVC)
