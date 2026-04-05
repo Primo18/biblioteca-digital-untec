@@ -1,0 +1,246 @@
+/* ============================================================
+   Biblioteca Digital UNTEC — Estilos principales
+   ============================================================ */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+/* ---- NAVBAR ---- */
+.navbar {
+    background-color: #1a3a5c;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.nav-brand {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-links a {
+    color: #c8d8ea;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #fff;
+}
+
+.nav-user {
+    color: #a0b8d0;
+    font-size: 0.85rem;
+}
+
+/* ---- CONTAINER ---- */
+.container {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+.container h2 {
+    margin-bottom: 1.25rem;
+    color: #1a3a5c;
+    border-bottom: 2px solid #1a3a5c;
+    padding-bottom: 0.5rem;
+}
+
+/* ---- LOGIN ---- */
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1a3a5c 0%, #2e6da4 100%);
+}
+
+.login-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 2.5rem 2rem;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.login-header h1 {
+    font-size: 1.6rem;
+    color: #1a3a5c;
+}
+
+.login-header p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.login-hint {
+    margin-top: 1rem;
+    text-align: center;
+    color: #888;
+}
+
+/* ---- FORMULARIOS ---- */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    color: #444;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #2e6da4;
+    box-shadow: 0 0 0 2px rgba(46,109,164,0.15);
+}
+
+.form-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+    max-width: 520px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.form-actions {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 1.25rem;
+}
+
+/* ---- BOTONES ---- */
+.btn {
+    display: inline-block;
+    padding: 0.55rem 1.1rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.88rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.btn:active {
+    transform: scale(0.97);
+}
+
+.btn-primary   { background: #2e6da4; color: #fff; }
+.btn-primary:hover   { background: #235a8a; }
+
+.btn-secondary { background: #6c757d; color: #fff; }
+.btn-secondary:hover { background: #565e64; }
+
+.btn-danger    { background: #c0392b; color: #fff; }
+.btn-danger:hover    { background: #a93226; }
+
+.btn-block { width: 100%; text-align: center; padding: 0.7rem; font-size: 1rem; }
+.btn-sm    { padding: 0.35rem 0.75rem; font-size: 0.82rem; }
+
+/* ---- TABLA ---- */
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.tabla thead {
+    background-color: #1a3a5c;
+    color: #fff;
+}
+
+.tabla th,
+.tabla td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.tabla tbody tr:nth-child(even) {
+    background-color: #f7f9fb;
+}
+
+.tabla tbody tr:hover {
+    background-color: #eaf1f8;
+}
+
+/* ---- BADGES ---- */
+.badge {
+    display: inline-block;
+    padding: 0.25rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.78rem;
+    font-weight: 700;
+}
+
+.badge-ok   { background: #d4edda; color: #1e7e34; }
+.badge-no   { background: #f8d7da; color: #721c24; }
+.badge-warn { background: #fff3cd; color: #856404; }
+
+/* ---- ALERTAS ---- */
+.alert {
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.alert-success { background: #d4edda; color: #155724; border-left: 4px solid #28a745; }
+.alert-error   { background: #f8d7da; color: #721c24; border-left: 4px solid #dc3545; }
+
+/* ---- MISC ---- */
+.acciones {
+    margin-top: 1.25rem;
+}
+
+.empty-msg {
+    color: #888;
+    font-style: italic;
+    padding: 1rem 0;
+}
